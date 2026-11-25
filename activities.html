@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citi Gym - Activities</title>
+   <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body id="top">
+
+    <header class="site-header">
+        <h1 class="site-title">Citi Gym</h1>
+
+         <button id="dark-toggle">Dark Mode</button>
+    </header>
+
+    <nav aria-label="Primary">
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="activities.html" aria-current="page">Activities</a></li>
+            <li><a href="training.html">Training</a></li>
+            <li><a href="news.html">News & Events</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <!-- ACTIVITIES INTRODUCTION -->
+        <section class="about">
+
+            <h2>Activities at Citi Gym</h2>
+
+            <p>
+                Citi Gym offers a wide range of fitness activities suitable for
+                different fitness levels, interests and personal goals.
+            </p>
+
+            <p>
+                Our activities include HIIT, Spin Classes, Weight Training,
+                Yoga and Pilates, as well as independent weight and cardio
+                training.
+            </p>
+
+            <p>
+                Use the filters below to find an activity that suits you.
+            </p>
+
+        </section>
+
+        <!-- FILTER SECTION -->
+        <section class="highlight">
+
+            <h3>Find an Activity</h3>
+
+            <p>
+                Filter our activities by fitness type, duration
+                or difficulty level.
+            </p>
+
+            <p>
+
+                <label for="category">
+                    <strong>Fitness Type:</strong>
+                </label>
+
+                <select id="category">
+
+                    <option value="all">All Fitness Types</option>
+                    <option value="cardio">Cardio</option>
+                    <option value="strength">Strength</option>
+                    <option value="mind">Mind &amp; Body</option>
+                    <option value="independent">Independent Training</option>
+
+                </select>
+
+            </p>
+
+            <p>
+
+                <label for="duration">
+                    <strong>Duration:</strong>
+                </label>
+
+                <select id="duration">
+
+                    <option value="all">All Durations</option>
+                    <option value="30">30 Minutes</option>
+                    <option value="45">45 Minutes</option>
+                    <option value="60">60 Minutes</option>
+
+                </select>
+
+            </p>
+
+            <p>
+
+                <label for="difficulty">
+                    <strong>Difficulty:</strong>
+                </label>
+
+                <select id="difficulty">
+
+                    <option value="all">All Difficulty Levels</option>
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+
+                </select>
+
+            </p>
+
+            <p>
+
+                <button type="button" id="reset-filters" class="btn">
+                    Reset Filters
+                </button>
+
+            </p>
+
+        </section>
+
+        <!-- ACTIVITY LIST -->
+        <section class="highlight">
+
+            <h2>Our Activities</h2>
+
+            <div class="grid">
+
+                <!-- HIIT -->
+                <div class="card"
+                    data-category="cardio"
+                    data-duration="30"
+                    data-difficulty="advanced">
+
+                    <img src="HIIT.png"
+                        alt="Member taking part in a HIIT class">
+
+                    <h3>HIIT Classes</h3>
+
+                    <p>
+                        High-Intensity Interval Training combines short periods
+                        of intense exercise with recovery periods to improve
+                        cardiovascular fitness, strength and endurance.
+                    </p>
+
+                    <p><strong>Fitness Type:</strong> Cardio</p>
+                    <p><strong>Duration:</strong> 30 Minutes</p>
+                    <p><strong>Difficulty:</strong> Advanced</p>
+                    <p><strong>Example Price:</strong> Included with membership</p>
+
+                    <p>
+                        <a href="contact.html" class="btn">
+                            Ask About HIIT
+                        </a>
+                    </p>
+
+                </div>
+
+                <!-- SPIN -->
+                <div class="card"
+                    data-category="cardio"
+                    data-duration="45"
+                    data-difficulty="intermediate">
+
+                    <img src="Cycling.png"
+                        alt="Members participating in our spin class">
+
+                    <h3>Spin Class</h3>
+
+                    <p>
+                        Spin classes provide a cardiovascular workout using
+                        stationary exercise bikes with different speeds
+                        and resistance levels.
+                    </p>
+
+                    <p><strong>Fitness Type:</strong> Cardio</p>
+                    <p><strong>Duration:</strong> 45 Minutes</p>
+                    <p><strong>Difficulty:</strong> Intermediate</p>
+                    <p><strong>Example Price:</strong> Included with membership</p>
+
+                    <p>
+                        <a href="contact.html" class="btn">
+                            Ask About Spin Classes
+                        </a>
+                    </p>
+
+                </div>
+
+                <!-- PILATES -->
+                <div class="card"
+                    data-category="mind"
+                    data-duration="60"
+                    data-difficulty="beginner">
+
+                    <img src="Pilates.png"
+                        alt="Members participating in Pilates">
+
+                    <h3>Mind &amp; Body Classes (Yoga &amp; Pilates)</h3>
+
+                    <p>
+                        Pilates uses controlled movements to improve posture,
+                        core strength, balance and flexibility. Suitable for
+                        beginners and experienced members alike.
+                    </p>
+
+                    <p><strong>Fitness Type:</strong> Mind &amp; Body</p>
+                    <p><strong>Duration:</strong> 60 Minutes</p>
+                    <p><strong>Difficulty:</strong> Beginner</p>
+                    <p><strong>Example Price:</strong> Included with membership</p>
+
+                    <p>
+                        <a href="contact.html" class="btn">
+                            Ask About Pilates
+                        </a>
+                    </p>
+
+                </div>
+
+                <!-- INDEPENDENT TRAINING -->
+                <div class="card"
+                    data-category="independent"
+                    data-duration="60"
+                    data-difficulty="beginner">
+
+                    <img src="CitiGymStoreFront.png"
+                        alt="Citi Gym training facilities">
+
+                    <h3>Independent Weight &amp; Cardio Training</h3>
+
+                    <p>
+                        Members can independently use Citi Gym's range
+                        of cardiovascular, resistance and weight-training
+                        equipment during normal opening hours.
+                    </p>
+
+                    <p>
+                        Staff are available to provide guidance if members
+                        require assistance using equipment.
+                    </p>
+
+                    <p><strong>Fitness Type:</strong> Independent Training</p>
+                    <p><strong>Duration:</strong> 60 Minutes</p>
+                    <p><strong>Difficulty:</strong> Beginner</p>
+                    <p><strong>Example Price:</strong> Included with membership</p>
+
+                    <p>
+                        <a href="contact.html" class="btn">
+                            Ask About Gym Membership
+                        </a>
+                    </p>
+
+                </div>
+
+                <!-- WEIGHT TRAINING -->
+                <div class="card"
+                    data-category="strength"
+                    data-duration="45"
+                    data-difficulty="intermediate">
+
+                    <img src="Weights.png"
+                        alt="Members participating in our weight training class">
+
+                    <h3>Group Strength &amp; Functional Training Classes</h3>
+
+                    <p>
+                        Weight training classes focus on building strength
+                        and muscle mass using free weights and resistance
+                        machines. Sessions are led by certified trainers.
+                    </p>
+
+                    <p><strong>Fitness Type:</strong> Weight Training</p>
+                    <p><strong>Duration:</strong> 45 Minutes</p>
+                    <p><strong>Difficulty:</strong> Intermediate</p>
+                    <p><strong>Example Price:</strong> Included with membership</p>
+
+                    <p>
+                        <a href="contact.html" class="btn">
+                            Ask About Weight Training
+                        </a>
+                    </p>
+
+                </div>
+
+                <!-- HELP CARD -->
+                <div class="card">
+
+                    <h3>Need Help Choosing an Activity?</h3>
+
+                    <p>
+                        If you are unsure which Citi Gym activity would be
+                        suitable for your fitness level or goals, our team
+                        can provide guidance.
+                    </p>
+
+                    <p>
+                        We can recommend classes, training programmes and
+                        membership options based on your experience level
+                        and personal fitness goals.
+                    </p>
+
+                    <p>
+                        Speak with one of our instructors for advice on the
+                        best activities for your needs.
+                    </p>
+
+                    <p>
+                        <a href="contact.html" class="btn">
+                            Contact Citi Gym
+                        </a>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+
+        <p>
+            &copy; 2026 Citi Gym
+        </p>
+
+        <p>
+            <a href="#top">
+                Back To Top
+            </a>
+        </p>
+
+    </footer>
+
+    <script src="theme.js"></script>
+    <script src="activities.js"></script>
+
+</body>
+</html>
+
+</html>
